@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+string reverseWords(string s) {
+           int left=0;
+           int l=s.length();
+           for(int right=0 ; right<=l ; right++){
+              if(right ==l || s[right]==' '){
+                reverse(s.begin()+left,s.begin()+right);
+                left=right+1;
+              }
+              
+           }
+           return s;
+    }
