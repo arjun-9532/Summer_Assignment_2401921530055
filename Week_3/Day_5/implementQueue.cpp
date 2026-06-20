@@ -42,4 +42,4 @@ public:
     bool empty() {
         return inStack.empty() && outStack.empty();
     }
-}
+};
